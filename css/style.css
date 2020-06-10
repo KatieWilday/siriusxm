@@ -161,23 +161,23 @@ header::after {
       margin-right: 1rem; }
 
   .btn {
+    position: absolute;
     padding: 1.3rem 3rem;
     font-size: 1.4rem; }
     .btn svg {
-      height: 2.25rem;
-      width: 2.25rem;
+      height: 2rem;
+      width: 2rem;
       fill: currentColor; }
 
 .search {
   background-color: #fff;
   border-radius: 10rem;
-  display: flex;
+  float: right;
   align-items: center;
-  padding-left: 1rem;
-  transition: all .3s; }
-  .search:focus-within {
-    transform: translateY(-2px);
-    box-shadow: 0 0.7rem 3rem rgba(101, 90, 86, 0.08); }
+  padding-left: 10rem;
+  transition: all .3s;
+}
+
   .search__field {
     border: none;
     background: none;
