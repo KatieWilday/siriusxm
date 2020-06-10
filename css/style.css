@@ -109,6 +109,15 @@ nav ul li ul p {
   font-size: 12px;
 }
 
+nav input {
+  float: right;
+  padding: 6px;
+  margin-top: 20px;
+  margin-left: 16px;
+  border: none;
+  font-size: 16px;
+}
+
 
 .header {
   background-color: #F9F5F3;
@@ -184,7 +193,7 @@ header::after {
     font-family: inherit;
     color: inherit;
     font-size: 1.7rem;
-    width: 10rem; }
+    width: 20rem; }
     .search__field:focus {
       outline: none; }
     .search__field::placeholder {
