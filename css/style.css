@@ -17,7 +17,7 @@ body {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  background-image: linear-gradient(to right top, #02ddfa, #004a54);
+  /*background-image: linear-gradient(to right top, #02ddfa, #004a54);*/
   background-size: cover;
   background-repeat: no-repeat;
   min-height: calc(100vh - 2 * 4vw); }
@@ -32,41 +32,51 @@ body { grid-area: body; }
 .grid-container {
   display: grid;
   grid-template-areas:
-  'header header header header header header'
-  'body body body body right right'
-  'para para para para right right'
-  'footer footer footer footer footer footer';
+  'header header header header'
+  'body body body right right right'
+  'body body body right right right'
+  'footer footer footer footer';
   grid-gap: 10px;
   padding: 10px;
 }
 
-body h1 {
+body .title {
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
   font-size: 40px;
+}
+
+.shawn {
+  width: 40%;
 }
 
 body p {
   font-size: 30px;
 }
 
-.headphones, .microphone, .guitar {
+.right, .tiles {
   float: right;
+  position: relative;
+  top: 5px;
+  right: 5px;
   padding: 10px;
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
 }
 
-.right {
-  grid-template: none;
+.right h1 {
+  position: relative;
+  float: right;
+  left: 10px;
+  top: 4px;
+  color: red;
 }
 
 .footer {
-  float: right;
+  float: left;
   font-size: 12px;
 }
 
-/* Top Links */
+/* Top Links: Manage Account, Help&Support */
 .top-links a {
   font-family: 'Oswald', sans-serif;
   color: #9c9797;
@@ -83,8 +93,7 @@ body p {
 /* Navigation Header */
 nav {
   width: 100%;
-  height: 40px;
-  background color: white;
+  height: 20px;
   text-transform: uppercase;
 }
 
@@ -99,14 +108,8 @@ nav a::after {
   display: block;
   height: 5px;
   width: 0%;
-  background-color: black;
   top: 0;
 
-}
-
-nav a:hover::after {
-  width: 100%;
-  transition: all ease-in-out 250ms;
 }
 
 nav ul {
@@ -131,15 +134,18 @@ nav ul li a {
   position: relative;
 }
 
+/*Drop Down Menu */
 nav ul li ul {
   display: none;
-  background-color: white;
+  background-color: #c9c9c9;
   padding: 10px;
   border-radius: 0 0 4px 4px;
 }
 
 nav ul li:hover ul {
   display: block;
+  background-color: #c9c9c9;
+  z-index: 9999999;
 }
 
 nav ul li ul a {
@@ -147,8 +153,8 @@ nav ul li ul a {
 }
 
 nav ul li ul img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 1px solid black;
+  border-radius: 0;
   padding: 5px;
   width: 150px;
 }
@@ -157,6 +163,7 @@ nav ul li ul p {
   font-family: 'Oswald', sans-serif;
   color: #1e808a;
   font-size: 12px;
+  color: #c9c9c9;
 }
 
 nav input {
@@ -170,7 +177,7 @@ nav input {
 
 
 .header {
-  background-color: #F9F5F3;
+  background-color: #c9c9c9;
   display: flex;
   justify-content: space-between;
 }
@@ -199,7 +206,13 @@ header::after {
   border: 1px solid #ddd;
 }
 
-
+/* Right Column Images */
+.right {
+  position:relative;
+  float: right;
+  width:33.33%;
+  padding: 10px;
+}
 
 
 /* Images */
