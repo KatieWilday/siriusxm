@@ -1,6 +1,6 @@
-umbs * {
+* {
   margin: 0;
-  padding: 0; }
+  padding: 3px; }
 
 *,
 *::before,
@@ -73,6 +73,7 @@ body p {
   font-size: 12px;
 }
 
+/* Navigation Header */
 nav {
   width: 100%;
   height: 40px;
@@ -111,7 +112,7 @@ nav ul li {
   list-style: none;
 }
 
-/*Style text inside navigation*/
+/* Style text inside navigation */
 nav ul li a {
   display: block;
   font-family: 'Oswald', sans-serif;
@@ -167,7 +168,7 @@ nav input {
   justify-content: space-between; }
   .header__logo {
     float: left;
-    margin-left: 10px;
+    margin-left: 8px;
     padding-top: 5px;
     height: 8rem;
     display: block;}
@@ -179,6 +180,20 @@ header::after {
   clear: both;
 }
 
+.search-container input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 20px;
+  margin-right: 16px;
+  font-size: 17px;
+  border: 1px solid #ddd;
+}
+
+
+
+
+/* Images */
 .ladygagaimg {
   position: relative;
   border: 1px solid #ddd;
@@ -192,30 +207,4 @@ header::after {
   top: 8px;
   left: 16px;
   font-size: 30px;
-}
-
-.search-container {
-  background-color: #fff;
-  float: right;
-  align-items: left;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  transition: all .3s;
-}
-.search__field:focus {
-  outline: none; }
-.search::placeholder {
-  color: #DAD0CC; }
-
-.search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-
-}
-.search-container button:hover {
-  background: #ccc;
 }
