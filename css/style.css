@@ -14,7 +14,7 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   min-height: calc(100vh - 2 * 4vw); }
@@ -33,7 +33,7 @@ body p {
 
 /* Header Styling */
 .header {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Arial", sans-serif;
   text-align: right;
   background: #cfcfcf;
   font-size: 14px;
@@ -120,6 +120,7 @@ form.search-container input[type=text] {
   background: #f1f1f1;
 }
 
+
 /* Style the submit button */
 form.search-container button {
   float: right;
@@ -159,13 +160,13 @@ form.search-container::after {
 }
 
 .side h1 {
-  font-size: 30px;
+  font-size: 28px;
   color: black;
   text-transform: uppercase;
 }
 
 .side h2 {
-  font-size: 30px;
+  font-size: 34px;
   color: #3a7794;
   padding-top: 30px;
 }
@@ -208,8 +209,13 @@ form.search-container::after {
 
 .main h1 {
   text-transform: uppercase;
+  font-weight: 600;
+  color: #3a7794;
+  font-size: 50px;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 2rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .shawn {
@@ -257,14 +263,14 @@ form.search-container::after {
 
 .left h1 {
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   padding-bottom: 10px;
 }
 
 .left p {
   text-align: center;
   color: #3a7794;
-  font-size: 18px;
+  font-size: 14px;
   padding: 6px
 }
 
@@ -295,10 +301,55 @@ form.search-container::after {
 }
 
 
-
+/* Footer */
 .footer {
-  padding: 20px;
-  text-align: right;
+  position: absolute;
+  padding: 10px;
   background: #ddd;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* List Styling */
+.footer ul li {
   font-size: 12px;
+  list-style-type: none;
+  padding: 10px;
+  line-height: normal;
+}
+
+.footer ul li a {
+  color: black;
+}
+
+.footer ul li a:hover {
+  color: red;
+}
+
+/* Positioning Next to one another */
+.footer-about {
+  padding-top: 60px;
+  margin-left: 12px;
+  width: 33%;
+  float: left;
+
+}
+
+.footer-service {
+  padding-top: 60px;
+  width: 33%;
+  float: left;
+}
+
+.footer-more {
+  padding-top: 60px;
+  float: left;
+  width: 33%;
+}
+
+
+.produced {
+  font-size: 14px;
+  text-align: right;
+  margin-right: 10px;
 }
