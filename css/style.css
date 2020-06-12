@@ -5,7 +5,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
@@ -71,10 +71,6 @@ body p {
   font-size: 18px;
 }
 
-.footer {
-  float: left;
-  font-size: 12px;
-}
 
 /* Header Styling */
 .header {
@@ -175,7 +171,6 @@ form.search-container button {
   color: white;
   font-size: 17px;
   border: 1px solid grey;
-
   cursor: pointer;
 }
 
@@ -190,13 +185,42 @@ form.search-container::after {
   display: table;
 }
 
-/* Right Column Images */
+/* Column container */
+.row {
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Right Column Tiles */
 .right {
   position:relative;
   float: right;
   width:33.33%;
   padding: 10px;
 }
+
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+
 
 
 /* Images */
