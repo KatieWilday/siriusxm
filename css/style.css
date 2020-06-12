@@ -76,6 +76,7 @@ body p {
   font-size: 12px;
 }
 
+/* Header Styling */
 .header {
   font-family: 'Oswald', sans-serif;
   text-align: right;
@@ -91,13 +92,6 @@ header::after {
   clear: both;
 }
 
-.header__logo {
-  margin-left: 8px;
-  padding-top: 5px;
-  height: 10rem;
-  display: block;
-}
-
 /* Top Links: Manage Account, Help&Support */
 .top-links {
   text-decoration: none;
@@ -109,100 +103,91 @@ header::after {
   color: #424141;
 }
 
-/* Navigation Header */
-nav {
-  width: 100%;
-  height: 20px;
+
+
+/* Navigation Bar */
+.logo {
+  margin-left: 8px;
+  padding-top: 5px;
+  height: 10rem;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #818282;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
-nav a:hover {
-  color: black;
+/* Style the navigation bar links */
+.navbar a {
+  position: relative;
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0 10px;
+  text-decoration: none;
+  top: 26px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  color: #0ad1d1;
   position: relative;
 
 }
 
-nav a::after {
+.navbar a::after {
   content: '';
   display: block;
   height: 5px;
   width: 0%;
   top: 0;
-
 }
 
-nav ul {
-  float: right;
-  padding: 20px;
-}
 
-nav ul li {
-  float: left;
-  list-style: none;
-  z-index: 999;
-}
-
-/* Style text inside navigation */
-nav ul li a {
-  display: block;
-  font-family: 'Oswald', sans-serif;
-  color: #1e808a;
-  font-size: 20px;
-  font-weight: 400;
-  padding: 0 20px;
-  text-decoration: none;
+/* Style the search field */
+.search-container {
+  box-sizing: border-box;
   position: relative;
-}
-
-/*Drop Down Menu - Hidden by Default*/
-nav ul li ul {
-  display: none;
-  background-color: #c9c9c9;
+  float: right;
+  top: 13px;
   padding: 10px;
-  border-radius: 0 0 4px 4px;
-  z-index: 1000; /* One more than the header. */
 }
 
-nav ul li:hover ul {
-  display: block;
-  background-color: #c9c9c9;
-}
-
-nav ul li ul a {
-  padding: 8px 14px;
-}
-
-nav ul li ul img {
-  border: 1px solid black;
-  border-radius: 0;
-  padding: 5px;
-  width: 150px;
-}
-
-nav ul li ul p {
-  font-family: 'Oswald', sans-serif;
-  color: #1e808a;
-  font-size: 12px;
-}
-
-nav input {
-  float: right;
-  padding: 6px;
-  margin-top: 20px;
-  margin-left: 16px;
-  border: none;
-  font-size: 16px;
-}
-
-.search-container input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 20px;
-  margin-right: 16px;
-  margin-bottom: 4px;
+form.search-container input[type=text] {
+  padding: 10px;
   font-size: 17px;
-  border: 1px solid #ddd;
+  border: 1px solid grey;
+  float: right;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.search-container button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: #0ad1d1;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+
+  cursor: pointer;
+}
+
+form.search-container button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.search-container::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Right Column Images */
