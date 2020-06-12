@@ -25,33 +25,9 @@ body .title {
   right: 5px;
 }
 
-.shawn {
-  width: 30%;
-  padding: 4px;
-}
-
 body p {
   font-size: 30px;
   margin-left: 3px;
-}
-
-.right, .tiles {
-  float: right;
-  position: relative;
-  top: 5px;
-  right: 5px;
-  padding: 10px;
-  height: 75px;
-  width: 75px;
-}
-
-.right h1 {
-  position: relative;
-  float: right;
-  right: 70px;
-  top: 4px;
-  color: black;
-  font-size: 18px;
 }
 
 
@@ -87,14 +63,13 @@ header::after {
 /* Navigation Bar */
 .logo {
   margin-left: 8px;
-  padding-top: 5px;
-  height: 10rem;
+  height: 15rem;
 }
 
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #818282;
+  background-color: #aaadad;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -106,14 +81,14 @@ header::after {
   display: block;
   color: white;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 15px;
   text-decoration: none;
-  top: 26px;
+  top: 48px;
 }
 
 /* Change color on hover */
 .navbar a:hover {
-  color: #0ad1d1;
+  color: #3a7794;
   position: relative;
 
 }
@@ -132,7 +107,7 @@ header::after {
   box-sizing: border-box;
   position: relative;
   float: right;
-  top: 13px;
+  top: 34px;
   padding: 10px;
 }
 
@@ -174,10 +149,10 @@ form.search-container::after {
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
+/* Create three unequal columns that sits next to each other */
+/* left/main/side */
 .side {
-  flex: 20%; /* Set the width of the sidebar */
+  flex: 25%; /* Set the width of the sidebar */
   background-color: #f1f1f1; /* Grey background color */
   padding: 20px; /* Some padding */
   text-align: center;
@@ -186,7 +161,19 @@ form.search-container::after {
 .side h1 {
   font-size: 30px;
   color: black;
+  text-transform: uppercase;
 }
+
+.side h2 {
+  font-size: 30px;
+  color: #3a7794;
+  padding-top: 30px;
+}
+
+.side p {
+  font-size: 16px;
+}
+
 .side button {
   display: block;
   margin-left: auto;
@@ -204,33 +191,97 @@ form.search-container::after {
   background: #0b7dda;
 }
 
-/* Main column */
-.main {
-
-  flex: 60%; /* Set the width of the main content */
-  background-color: white; /* White background color */
-  padding: 20px; /* Some padding */
+.streaming, .select, .access {
+  width: 100%;
+  align-items: center;
+  border-radius: 6px;
+  border: solid 1px black;
 }
 
-/* Right Column Tiles/New Music */
-.right {
-  flex: 20%; /* Set the width of the sidebar */
+/* Main column */
+.main {
+  flex: 55%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 10px; /* Some padding */
+
+}
+
+.main h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.shawn {
+  width: 100%;
+  padding: 4px;
+}
+
+.main h2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  width: 95%;
+  text-align: justify;
+  padding-top: 6px;
+  padding-bottom: 150px;
+}
+
+.shawn-text {
+  position: absolute;
+  top: 39%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+}
+
+.workout {
+    width: 100%;
+    padding: 4px;
+}
+
+.podcasts {
+  width: 100%;
+  padding: 4px;
+}
+
+
+/* Left Column - Now Playing */
+.left {
+  flex: 15%; /* Set the width of the sidebar */
   background-color: #f1f1f1; /* Grey background color */
   padding: 20px; /* Some padding */
 }
 
-
-
-
-
-
-.footer {
-  padding: 20px; /* Some padding */
-  text-align: center; /* Center text*/
-  background: #ddd; /* Grey background */
+.left h1 {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 10px;
 }
 
+.left p {
+  text-align: center;
+  color: #3a7794;
+  font-size: 18px;
+  padding: 6px
+}
 
+.left p a {
+  font-size: 12px;
+  color: #3a7794;
+}
+
+.left p a:hover {
+  color: #9a9b9c;
+}
+
+.previous {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 8rem;
+}
 
 /* Images */
 .ladygagaimg {
@@ -241,4 +292,13 @@ form.search-container::after {
   border-radius: 4px;
   padding: 5px;
   width: 150px;
+}
+
+
+
+.footer {
+  padding: 20px;
+  text-align: right;
+  background: #ddd;
+  font-size: 12px;
 }
