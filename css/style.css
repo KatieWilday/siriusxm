@@ -19,23 +19,6 @@ body {
   line-height: 1.6;
   min-height: calc(100vh - 2 * 4vw); }
 
-
-.header { grid-area: header; }
-body { grid-area: body; }
-.para {grid-area: para; }
-.right { grid-area: right; }
-.footer { grid-area: footer; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-  'header header header header'
-  'body body body right right right'
-  'body body body right right right'
-  'footer footer footer footer';
-  grid-gap: 10px;
-}
-
 body .title {
   display: grid;
   font-size: 36px;
@@ -187,7 +170,6 @@ form.search-container::after {
 
 /* Column container */
 .row {
-
   display: flex;
   flex-wrap: wrap;
 }
@@ -195,25 +177,52 @@ form.search-container::after {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 30%; /* Set the width of the sidebar */
+  flex: 20%; /* Set the width of the sidebar */
   background-color: #f1f1f1; /* Grey background color */
   padding: 20px; /* Some padding */
+  text-align: center;
+}
+
+.side h1 {
+  font-size: 30px;
+  color: black;
+}
+.side button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background: #0ad1d1;
+  color: white;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.side button:hover {
+  background: #0b7dda;
 }
 
 /* Main column */
 .main {
-  flex: 70%; /* Set the width of the main content */
+
+  flex: 60%; /* Set the width of the main content */
   background-color: white; /* White background color */
   padding: 20px; /* Some padding */
 }
 
-/* Right Column Tiles */
+/* Right Column Tiles/New Music */
 .right {
-  position:relative;
-  float: right;
-  width:33.33%;
-  padding: 10px;
+  flex: 20%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
 }
+
+
+
+
+
 
 .footer {
   padding: 20px; /* Some padding */
@@ -225,16 +234,11 @@ form.search-container::after {
 
 /* Images */
 .ladygagaimg {
-  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
   width: 150px;
-}
-
-.ladygaga-title {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  font-size: 30px;
 }
